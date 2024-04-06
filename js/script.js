@@ -1,20 +1,16 @@
 let X = 100;
 if (X < 50) {
-    result = "X ნაკლებია 50 ზე"
+    console.log("X ნაკლებია 50 ზე");
 }
 
+else if (X > 20) {
+    console.log(" X მეტია 20 ზე ")
+};
 else {
-    result = "შეცდომა"
+    console.log("შეცდომა");
 }
-console.log(result)
 
-if (X > 20) {
-    result = " X მეტია 20 ზე "
-}
-else {
-    result = "შეცდომა"
-}
-console.log(result)
+let result = X < 50 ? "ნაკლებია 50 ზე " : X > 20 ? "მეტია 20 ზე " : "შეცდომა";
 
 
 
@@ -31,16 +27,17 @@ else {
 
 let a = "მარიამ"
 switch (a) {
-    case 0:
-        if (a = "მარიამი") {
-            console.log(true);
-        }
-
-        else {
-            console.log(false);
-        }
+    case "მარიამი":
+        console.log(true);
         break;
+        default:
+            console.log(false);
 }
 
-let number=10;
+let word = "თათია"
+console.log(typeof word);
+
+
+
+let number = 10;
 console.log(String(number));
